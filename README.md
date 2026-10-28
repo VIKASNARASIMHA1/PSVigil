@@ -55,23 +55,23 @@ The full output of every run is in [`docs/detection-results.md`](docs/detection-
 
 **Offline tests**
 
-![tests](docs/screenshots/01-tests-pass.png)
+![tests](docs/screenshots/01-tests-pass.PNG)
 
 **Detection harness against the live logs**
 
-![harness](docs/screenshots/02-detection-18of18.png)
+![harness](docs/screenshots/02-detection-18of18.PNG)
 
 **Report: ATT&CK coverage matrix** (red = fired in this run, blue = rule exists, dashed = gap)
 
-![matrix](docs/screenshots/03-report-matrix.png)
+![matrix](docs/screenshots/03-report-matrix.PNG)
 
 **Report: alerts, including correlation chains and a decoded payload**
 
-![alerts](docs/screenshots/04-report-alerts.png)
+![alerts](docs/screenshots/04-report-alerts.PNG)
 
 **Stream mode: events become alerts as they are written**
 
-![stream](docs/screenshots/05-stream-mode.png)
+![stream](docs/screenshots/05-stream-mode.PNG)
 
 ## How it works
 
