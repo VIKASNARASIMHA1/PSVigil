@@ -1,0 +1,20 @@
+cd C:\Users\<you>\Desktop\PSVigil
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Get-ChildItem -Recurse | Unblock-File
+
+.\Invoke-Tests.ps1
+
+.\Setup-Telemetry.ps1
+
+.\Invoke-Simulations.ps1 -Run All
+.\Invoke-Simulations.ps1 -Run Variants
+.\Invoke-Simulations.ps1 -Run Chains
+Start-Sleep 10
+
+.\Invoke-PSVigil.ps1 -Mode Scan -Minutes 5 -OpenReport
+
+.\Invoke-DetectionTest.ps1
+
+.\Invoke-PSVigil.ps1 -Mode Stream
+
+In a second Administrator window (repeat steps 2 and 3 there), run .\Invoke-Simulations.ps1 -Run All. Alerts should appear in the first window within seconds. Press Ctrl+C in the first window to stop and write the report.
