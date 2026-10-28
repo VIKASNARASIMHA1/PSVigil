@@ -1,7 +1,5 @@
 # PSVigil
 
-![tests](https://github.com/YOUR-USERNAME/PSVigil/actions/workflows/ci.yml/badge.svg)
-
 A **PowerShell-only mini SIEM** for Windows: it collects event logs, normalizes them, runs 15 ATT&CK-mapped detection rules
 (including multi-step correlation rules), runs dry-run-by-default response actions, produces an HTML report with an
 ATT&CK coverage matrix, and **measures its own detection rate** against safe attack simulations.
